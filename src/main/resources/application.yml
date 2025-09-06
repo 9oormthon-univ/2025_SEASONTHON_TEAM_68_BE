@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: 2025_SeasonThon
+
+  datasource:
+    url: jdbc:mysql://${DB_HOST}:3306/${DB_SCHEMA}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# OPEN AI API
+open-ai:
+  secret: ${OPENAI_API_KEY}
+
+naver:
+  client-id: ${NAVER_CLIENT_ID}
+  client-secret: ${NAVER_CLIENT_SECRET}
+
