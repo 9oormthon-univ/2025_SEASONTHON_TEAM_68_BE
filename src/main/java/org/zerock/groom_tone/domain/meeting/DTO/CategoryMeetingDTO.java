@@ -22,34 +22,9 @@ public class CategoryMeetingDTO {
     @JsonPropertyDescription("전체 회의 내용 요약")
     private String summary;
 
-    @JsonProperty("calendar_events")
-    private List<CalendarEvent> calendarEvents;
-
     @JsonProperty("todos_by_person")
     private List<PersonToDo> todosByPerson;
 
-
-    /**
-     * 추출된 캘린더 일정 정보를 담는 클래스
-     */
-    @Getter
-    @Setter
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class CalendarEvent {
-        @JsonPropertyDescription("일정의 제목")
-        private String title;
-        
-        @JsonPropertyDescription("일정에 대한 상세 설명")
-        private String description;
-
-        @JsonPropertyDescription("일정이 진행되는 장소")
-        private String location;
-
-        private EventDateTime start;
-        private EventDateTime end;
-        private List<EventAttendee> attendees;
-    }
 
     /**
      * 사람별 할 일 목록을 담는 클래스

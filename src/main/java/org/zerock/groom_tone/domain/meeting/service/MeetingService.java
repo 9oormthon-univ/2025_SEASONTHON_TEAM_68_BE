@@ -58,8 +58,8 @@ public class MeetingService {
                 .build();
         return meetingRepository.save(meetingEntity);
     }
-    // 투두 저장
 
+    // 투두 저장
     public void saveTodo(MeetingEntity meetingEntity, PersonToDo personToDo) {
         for (String task : personToDo.getTasks()) {
             TodoEntity todoEntity = TodoEntity.builder()
