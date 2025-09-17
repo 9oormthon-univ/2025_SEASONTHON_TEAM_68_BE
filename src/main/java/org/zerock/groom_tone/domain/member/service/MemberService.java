@@ -4,7 +4,7 @@ import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.zerock.groom_tone.domain.member.DTO.NaverProfileDTO.UserInfo;
+import org.zerock.groom_tone.domain.member.DTO.MemberDTO;
 import org.zerock.groom_tone.domain.member.entity.MemberEntity;
 import org.zerock.groom_tone.domain.member.repository.MemberRepository;
 
@@ -14,12 +14,12 @@ public class MemberService {
     private final MemberRepository memberRepository;
 
     // 저장
-    public String saveMember(UserInfo userInfo) {
+    public String saveMember(MemberDTO memberDTO) {
         String sessionId = registerSession();
 
         MemberEntity memberEntity = MemberEntity.builder()
-                .name(userInfo.getName())
-                .email(userInfo.getEmail())
+                .name(memberDTO.getName())
+                .email(memberDTO.getEmail())
                 .sessionId(sessionId)
                 .build();
 
@@ -34,11 +34,11 @@ public class MemberService {
 
     // 분기 - 아이디가 잇으면 새션 다시 발급 없으면 저장 후 세션 발급
     @Transactional
-    public String registerMember(UserInfo userInfo) {
-        if (duplicateMember(userInfo.getEmail())) { // 이미 가입된 유저
-            return ReRegisterSession(userInfo.getEmail());
+    public String registerMember(MemberDTO memberDTO) {
+        if (duplicateMember(memberDTO.getEmail())) { // 이미 가입된 유저
+            return ReRegisterSession(memberDTO.getEmail());
         }// 가입 안 된 유저
-        return saveMember(userInfo);
+        return saveMember(memberDTO);
     }
 
     public String ReRegisterSession(String email) {
