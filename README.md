@@ -7,7 +7,7 @@
 1min은 회의에서 도출된 Action Item을 기반으로 **회의의 생산성을 진단**하고,  
 **우선순위에 따른 할 일 관리**를 통해 신속하게 업무를 시작하도록 돕는 정보 과잉 해결 솔루션입니다.
 
-![image](readme_assets/main.png)
+![image](readme_assets/1_overview.png)
 <br/><br/>
 
 ## 🔥 This is Our Team
@@ -20,16 +20,26 @@
 | [@i-chaeyeon](https://github.com/i-chaeyeon) | - | [@fine-pine](https://github.com/fine-pine) | [@skxcv312](https://github.com/skxcv312) |
 
 
-
-
 ## 🛠️ Tech Stacks
-<img src="readme_assets/typescript.png" width="40"/> <img src="readme_assets/nextjs.svg" width="40"/> <img src="readme_assets/spring.svg" width="40"/> <img src="readme_assets/openai.webp" width="40"/> 
+<img src="readme_assets/typescript.png" width="40"/> <img src="readme_assets/nextjs.svg" width="40"/> <img src="readme_assets/spring.svg" width="40"/> <img src="readme_assets/openai.webp" width="40"/> <img src="readme_assets/mysql.webp" width="40"/> 
 
-----
-## 😎 서비스 소개
+## 🛠️ Development Architecture
+![image](readme_assets/7_architecture.png)
+
+## 😎 핵심 기능 소개
+![image](readme_assets/3_feature_input.png)
+![image](readme_assets/4_feature_action_item.png)
+![image](readme_assets/5_feature_priority.png)
+![image](readme_assets/6_feature_minutes_history.png)
+
+## 😎 기존 서비스와의 차별점
+![image](readme_assets/2_difference.png)
+
+## 😎 기대 효과와 발전 가능성
+![image](readme_assets/10_expected.png)
+![image](readme_assets/11_more_developments.png)
 
 
-## 😎 기능 소개
 
-## 🛠️ Service Architecture
+
 
