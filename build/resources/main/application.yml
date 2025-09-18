@@ -21,6 +21,6 @@ open-ai:
   secret: ${OPENAI_API_KEY}
 
 naver:
-  client-id: ${NAVER_CLIENT_ID}
-  client-secret: ${NAVER_CLIENT_SECRET}
+  speech-invoke: ${NAVER_SPEECH_INVOKE}
+  speech-secret: ${NAVER_SPEECH_SECRET}
 
