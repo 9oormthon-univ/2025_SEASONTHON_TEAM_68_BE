@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://2025-seasonthon-team-68-fnzek0yxu-fine-pines-projects.vercel.app") 
+                        .allowedOrigins("*") 
                         .allowedMethods("*") 
                         .allowCredentials(true);
             }
